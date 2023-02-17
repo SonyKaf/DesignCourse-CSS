@@ -5,58 +5,64 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Poppins";
 }
 
 body {
   height: 100vh;
   background: #20262C;
+  font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
   height: 100%;
 }
 .wrapper .card {
+  width: 300px;
   background: #2F3740;
   padding: 2em;
   border-radius: 14px;
 }
-.wrapper .card img {
-  width: 250px;
-  height: 170px;
-  border-radius: 5px;
+.wrapper .card h1 {
+  margin-bottom: 0.86em;
 }
-.wrapper .card h2 {
+.wrapper .card h1 a {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #FFF;
+  line-height: 120%;
+}
+.wrapper .card .tag {
   font-size: 1.2rem;
   font-weight: 700;
   color: #BEFF00;
   padding: 0.5em;
   background: #455260;
   border-radius: 5px;
-  width: -moz-fit-content;
-  width: fit-content;
+  display: inline-block;
   margin-top: 1.08em;
   margin-bottom: 1.16em;
+  text-transform: uppercase;
 }
-.wrapper .card h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #FFF;
-  line-height: 120%;
-  margin-bottom: 0.86em;
+.wrapper .card img {
+  width: 100%;
+  border-radius: 5px;
 }
 .wrapper .card a {
   text-decoration: none;
   cursor: pointer;
+}
+.wrapper .card a.cta {
+  display: flex;
+}
+.wrapper .card a.cta p {
+  color: #B1C4D9;
   font-size: 1.4rem;
 }
-.wrapper .card a span {
-  color: #B1C4D9;
-}
-.wrapper .card a .arrow {
+.wrapper .card a.cta .arrow {
+  margin-left: 1em;
+  align-self: center;
   width: 1.1rem;
   height: 0.8rem;
 }/*# sourceMappingURL=main.css.map */
