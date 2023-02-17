@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+
+body {
+  height: 100vh;
+  background: #20262C;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.wrapper .card {
+  background: #2F3740;
+  padding: 2em;
+  border-radius: 14px;
+}
+.wrapper .card img {
+  width: 250px;
+  height: 170px;
+  border-radius: 5px;
+}
+.wrapper .card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #BEFF00;
+  padding: 0.5em;
+  background: #455260;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 1.08em;
+  margin-bottom: 1.16em;
+}
+.wrapper .card h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFF;
+  line-height: 120%;
+  margin-bottom: 0.86em;
+}
+.wrapper .card a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.wrapper .card a span {
+  color: #B1C4D9;
+}
+.wrapper .card a .arrow {
+  width: 1.1rem;
+  height: 0.8rem;
+}/*# sourceMappingURL=main.css.map */
