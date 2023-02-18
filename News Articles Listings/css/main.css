@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #FCF5EB;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  padding: 10em 14em;
+}
+main .main-header {
+  font-size: 4.4rem;
+  font-weight: 700;
+  font-family: "Playfair Display";
+  position: relative;
+}
+main .main-header::before {
+  position: absolute;
+  top: 0;
+  line-height: 0;
+  font-size: 30rem;
+  left: -0.35em;
+  color: rgba(0, 0, 0, 0.05);
+  content: "N";
+}
+main section.article-container {
+  display: flex;
+  gap: 5.8em;
+  border-top: 1px solid black;
+}
+main section.article-container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: "Playfair Display";
+}
+main section.article-container p {
+  font-size: 1.4em;
+  font-weight: 400;
+  font-family: "Inter";
+}/*# sourceMappingURL=main.css.map */
