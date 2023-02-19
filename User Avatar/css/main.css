@@ -1,0 +1,47 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background: #CBE1F1;
+  font-family: "Nunito";
+}
+
+.wrapper {
+  height: 100%;
+  padding: 5em;
+}
+.wrapper .avatar-container {
+  background: #ffffff;
+  display: flex;
+  border-radius: 20em;
+  align-items: center;
+  padding: 1em;
+  width: 100%;
+  justify-content: space-between;
+}
+.wrapper .avatar-container div {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+.wrapper .avatar-container div img {
+  border-radius: 100em;
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .avatar-container div p {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.wrapper .avatar-container svg {
+  padding-right: 1.5em;
+  width: 2em;
+  height: 2em;
+}/*# sourceMappingURL=main.css.map */
