@@ -1,0 +1,55 @@
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    margin: 2em;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+   
+
+    .title{
+        font-family: Playfair Display;
+        font-weight: 400;
+        font-size: 3.2rem;
+        padding: .78em;
+        
+        .green{
+            color: #07801E;
+        }
+    }
+
+    .gallery{
+        
+        height: 400px;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+
+        img{
+            border-radius: 1em;
+            object-fit: cover;
+            height: 225px;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .content{
+        
+        
+        .gallery{
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            img{
+                flex-grow: 1;
+            }
+        }
+    }
+}

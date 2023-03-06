@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 2em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content .title {
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 3.2rem;
+  padding: 0.78em;
+}
+.content .title .green {
+  color: #07801E;
+}
+.content .gallery {
+  height: 400px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+.content .gallery img {
+  border-radius: 1em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 225px;
+}
+
+@media screen and (min-width: 600px) {
+  .content .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .content .gallery img {
+    flex-grow: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
