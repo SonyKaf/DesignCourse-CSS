@@ -1,0 +1,148 @@
+html {
+  font-size: 62.5%;
+  font-family: Poppins;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #181818;
+  height: 100vh;
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+section {
+  padding: 14em 4em;
+}
+section .content {
+  display: flex;
+  flex-direction: column;
+}
+section .content button {
+  margin-top: 1em;
+  padding: 0.5em;
+  background: #7000FF;
+  border: none;
+  color: white;
+  font-size: 2em;
+  width: 100%;
+  border-radius: 0.5em;
+  font-weight: bold;
+}
+section .content .note {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 1.2rem;
+  color: #878787;
+  letter-spacing: 0.05rem;
+}
+section .content .main {
+  display: flex;
+  flex-direction: column;
+}
+section .content .main .card-1 {
+  background-color: #7000FF;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: 5em;
+}
+section .content .main .card-1 p {
+  font-weight: bold;
+}
+section .content .main .card-1 .vs-num {
+  font-size: 5.5rem;
+}
+section .content .main .card-1 .vs-text {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+section .content .main .card-2 {
+  margin-top: 3em;
+  border: 2px solid #2E2E2E;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: 6em 5em;
+}
+section .content .main .mb {
+  margin-bottom: 3em;
+}
+section .content .main .info {
+  display: flex;
+}
+section .content .main .info .icon {
+  width: 5em;
+  margin-right: 0.5em;
+}
+section .content .main .info div {
+  display: flex;
+  flex-direction: column;
+}
+section .content .main .info div .c2-num {
+  font-weight: bold;
+  font-size: 3.2rem;
+}
+section .content .main .info div .c2-text {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 0.5em;
+}
+
+@media (min-width: 930px) {
+  section {
+    padding: 8em;
+  }
+  section .content button {
+    padding: 1em;
+    margin-top: 2em;
+  }
+  section .content .note {
+    margin-top: 2em;
+    font-size: 1.4rem;
+  }
+  section .content .main {
+    flex-direction: row;
+    gap: 3em;
+  }
+  section .content .main .card-1 {
+    padding: 5em 4em;
+    flex-grow: 1;
+  }
+  section .content .main .card-2 {
+    gap: 6em;
+    margin-top: 0;
+    padding: 4em 2em;
+    flex-grow: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  section .content .main .card-2 .mb {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1340px) {
+  section {
+    padding: 14em;
+  }
+  section .content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2em;
+  }
+  section .content button {
+    margin-top: 0;
+  }
+  section .content .note {
+    text-align: left;
+  }
+  section .content .main {
+    flex-grow: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
