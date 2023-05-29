@@ -9,13 +9,35 @@ body {
   width: 100vw;
 }
 
-header .navbar {
+header{
   background-color: #DBE1E8;
+}
+
+header .wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .navbar {
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.7em 12em;
+  padding: 2.5em;
+
 }
+
+header .navbar nav{
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 33%;
+  background: white;
+  height: 100vh;
+  padding: 4.6em;
+  transition: right 0.5s ease-in-out;
+}
+
 header .navbar .active {
   font-weight: 700;
 }
@@ -32,6 +54,11 @@ header .navbar a.logo {
 }
 header .navbar nav ul {
   display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  align-items: flex-end;
   gap: 3.5em;
 }
 header .navbar nav ul li {
@@ -45,7 +72,7 @@ header .navbar nav ul li a {
 header .navbar nav ul li :hover {
   color: #0460BC;
 }
-header .navbar a.cart-container {
+header .navbar .mobile-cart-menu a.cart-container {
   background-color: #C3CCD7;
   display: flex;
   gap: 0.55em;
@@ -56,13 +83,60 @@ header .navbar a.cart-container {
   color: black;
   font-weight: 400;
 }
-header .navbar a.cart-container .cart {
+header .navbar .mobile-cart-menu a.cart-container .cart {
   width: 20px;
   height: auto;
 }
-header .navbar a.cart-container p {
+header .navbar .mobile-cart-menu a.cart-container p {
   margin: 0;
 }
-header .navbar a.cart-container:hover {
+header .navbar .mobile-cart-menu a.cart-container:hover {
   background-color: #B5C0CE;
-}/*# sourceMappingURL=main.css.map */
+}
+
+header .navbar nav .close-btn{
+  cursor: pointer;
+  display: block;
+  width: 3rem;
+  margin-left: auto;
+  margin-bottom: 6.6em;
+}
+
+header .navbar .mobile-cart-menu .menu-btn{
+  cursor: pointer;
+  width: 3.5rem;
+}
+
+header .navbar .mobile-cart-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+header .navbar  .open,header .navbar .mobile-cart-menu  .open {
+right: 0;
+}
+
+@media screen and (min-width:600px) {
+  header .navbar nav .close-btn, header .navbar .mobile-cart-menu .menu-btn{
+    display: none;
+  }
+  
+  header .navbar nav{
+    position: unset;
+    width: auto;
+    background: none;
+    height: auto;
+    padding: 0;
+  }
+
+  header .navbar nav ul {
+
+    flex-direction: row;
+
+   
+  }
+  
+}
+/*# sourceMappingURL=main.css.map */
